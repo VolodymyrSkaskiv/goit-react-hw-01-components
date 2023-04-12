@@ -1,5 +1,4 @@
-import user from 'path/to/user.json;
-const Product = ({ user.username, user.tag, user.location, user.avatar, user.stats }) => (
+export const Profile = ({ username, tag, location, avatar, stats }) => (
   <div class="profile">
     <div class="description">
       <img
@@ -7,7 +6,7 @@ const Product = ({ user.username, user.tag, user.location, user.avatar, user.sta
         alt="User avatar"
         class="avatar"
       />
-      <p class="name">Petra Marica</p>
+      <p class="name">{username}</p>
       <p class="tag">@pmarica</p>
       <p class="location">Salvador, Brasil</p>
     </div>
@@ -15,7 +14,7 @@ const Product = ({ user.username, user.tag, user.location, user.avatar, user.sta
     <ul class="stats">
       <li>
         <span class="label">Followers</span>
-        <span class="quantity">1000</span>
+        <span class="quantity">2000</span>
       </li>
       <li>
         <span class="label">Views</span>
@@ -29,15 +28,5 @@ const Product = ({ user.username, user.tag, user.location, user.avatar, user.sta
   </div>
 );
 
-import user from 'path/to/user.json;
-
-<Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
-
 // У розмітці компонент записується як JSX-тег
-ReactDOM.createRoot(document.getElementById('root')).render(<Product />);
+// ReactDOM.createRoot(document.getElementById('root')).render(<Product />);
