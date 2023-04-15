@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(255, 247, 237);
+}
 .profile {
   margin: 50px 0;
   border: 1px solid rgb(227, 227, 227);
