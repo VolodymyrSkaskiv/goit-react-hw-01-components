@@ -3,7 +3,7 @@ import css from './FriendList.module.css';
 import { FriendListItem } from './FriendListItem';
 
 export const FriendList = ({ friends }) => (
-  <ul className="friend-list">
+  <ul className={css.friendList}>
     {friends.map(friend => {
       return (
         // повернення 1 карточки друга
