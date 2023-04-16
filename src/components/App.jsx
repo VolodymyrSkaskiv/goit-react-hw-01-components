@@ -1,18 +1,17 @@
 import { startTransition } from 'react';
 import { Profile } from './profile/Profile';
-import user from './profile/user.json';
+import user from '../data/user.json';
 import { Statistics } from './statistics/Statistics';
-import data from './statistics/data.json';
-import friends from './friendlist/friends.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
 import { FriendList } from './friendlist/FriendList';
-import transactions from './transactionhistory/transactions.json';
+import transactions from '../data/transactions.json';
 import { TransactionHistory } from './transactionhistory/TransactionHistory';
 
 export const App = () => {
   return (
     <div
       style={{
-        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
