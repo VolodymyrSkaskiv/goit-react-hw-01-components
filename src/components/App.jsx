@@ -1,5 +1,5 @@
 import { startTransition } from 'react';
-import { Profile } from './profile/Profile';
+import { Profile } from './Profile/Profile';
 import user from '../data/user.json';
 import { Statistics } from './statistics/Statistics';
 import data from '../data/data.json';
